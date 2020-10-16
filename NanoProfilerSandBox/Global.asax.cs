@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using EF.Diagnostics.Profiling.EF;
 
 namespace NanoProfilerSandBox
 {
@@ -20,6 +21,9 @@ namespace NanoProfilerSandBox
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             GlobalConfiguration.Configuration.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
+
+            //use EF nano profiler 
+            EFProfilingBootstrapper.Initialize();
         }
     }
 }

@@ -52,11 +52,30 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NanoProfiler, Version=2.2.0.0, Culture=neutral, PublicKeyToken=132fc11abeaff685, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoProfiler.2.2.0\lib\net45\NanoProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="NanoProfiler.Data, Version=2.2.0.0, Culture=neutral, PublicKeyToken=132fc11abeaff685, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoProfiler.Data.2.2.0\lib\net45\NanoProfiler.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NanoProfiler.EF, Version=2.2.0.0, Culture=neutral, PublicKeyToken=132fc11abeaff685, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoProfiler.EF.2.2.0\lib\net45\NanoProfiler.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="NanoProfiler.Storages.Json, Version=2.2.0.0, Culture=neutral, PublicKeyToken=132fc11abeaff685, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoProfiler.Storages.Json.2.2.0\lib\net45\NanoProfiler.Storages.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NanoProfiler.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=132fc11abeaff685, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoProfiler.Web.2.2.0\lib\net45\NanoProfiler.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=592edb3b6b36b5ba, processorArchitecture=MSIL">
+      <HintPath>..\packages\slf4net.1.0.0\lib\net40\slf4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -187,6 +206,7 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Respository\CustomersRepository.cs" />
+    <Compile Include="Respository\ConnectionProvider.cs" />
     <Compile Include="Shippers.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

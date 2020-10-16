@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using EF.Diagnostics.Profiling;
 using NanoProfilerSandBox.Respository;
 
 namespace NanoProfilerSandBox.Controllers
@@ -19,7 +20,12 @@ namespace NanoProfilerSandBox.Controllers
         [Route("~/Customers")]
         public IEnumerable<string> Get()
         {
-            return _CustomersRepository.GetCustomerContactName();
+            var result = new List<string>();
+            using (ProfilingSession.Current.Step("CustomController.Get()"))
+            {
+                result = _CustomersRepository.GetCustomerContactName();
+            }
+            return result;
         }
 
         // GET api/<controller>/5
