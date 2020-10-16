@@ -144,6 +144,7 @@
     <Compile Include="Categories.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\CustomController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="CustomerDemographics.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -185,6 +186,7 @@
     <Compile Include="Region.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Respository\CustomersRepository.cs" />
     <Compile Include="Shippers.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
